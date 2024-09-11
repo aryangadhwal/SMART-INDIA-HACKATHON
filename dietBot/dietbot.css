@@ -1,0 +1,55 @@
+/* Basic reset and background styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('https://img.freepik.com/premium-photo/healthy-food-variation-with-copy-space-empty-background_944892-519.jpg'); /* Add your background image here */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid image repetition */
+    background-attachment: fixed; /* Ensure the background image stays in place when scrolling */
+}
+
+/* Center the content container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Chatbot container styling */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: 500px; /* Adjust as needed */
+    background-color: transparent; /* Transparent background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    box-shadow: none; /* No shadow */
+    border: none; /* No border */
+}
+
+/* Optional: Adjust iframe or embedded content to be responsive */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    #chatbot-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #chatbot-container {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}

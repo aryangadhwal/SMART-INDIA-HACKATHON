@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Search & Booking</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <form id="medicineSearchForm">
+        <label for="parentName">Enter Your Patient's Name:</label>
+        <input type="text" id="parentName" name="parentName" placeholder="name" required>
+
+        <label for="location">Enter Your Location:</label>
+        <input type="text" id="location" name="location" placeholder="city" required>
+
+        <label for="medicine">Enter Medicine Name:</label>
+        <input type="text" id="medicine" name="medicine" placeholder="Paracetamol" required>
+
+        <button type="submit">Search Stores</button>
+    </form>
+
+    <div id="storeResults" class="store-list" style="display: none;">
+        <h3>Stores Found:</h3>
+        <div id="stores"></div>
+    </div>
+
+    <div id="slip" class="store-list" style="display: none;">
+        <h3>Booking Slip</h3>
+        <p id="slipDetails"></p>
+        <button id="downloadSlip" onclick="downloadPDF()">Download Slip as PDF</button>
+    </div>
+
+    <table id="bookingTable" style="display: none;">
+        <thead>
+            <tr>
+                <th>Patient's Name</th>
+                <th>Medicine Name</th>
+                <th>Store Name</th>
+                <th>Total Amount Paid</th>
+            </tr>
+        </thead>
+        <tbody id="bookings"></tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="medicine.js"></script>
+</body>
+</html>
