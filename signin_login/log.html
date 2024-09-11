@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login Page</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+<div class="container" id="auth-container">
+    <h2 id="form-title">Login</h2>
+    <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="error" id="email-error">Please enter a valid email address</div>
+    </div>
+    <div class="input-group" id="password-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <div class="error" id="password-error">Password must be at least 6 characters long</div>
+    </div>
+    <div class="input-group" id="confirm-password-group" style="display: none;">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password">
+        <div class="error" id="confirm-password-error">Passwords do not match</div>
+    </div>
+    <div class="input-group">
+        <button id="submit-btn">Login</button>
+    </div>
+    <div class="toggle-link">
+        <a id="toggle-link" onclick="toggleForm()">Don't have an account? Sign up</a>
+    </div>
+</div>
+
+<script src="log.js"></script>
+
+</body>
+</html>
