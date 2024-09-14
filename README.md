@@ -1,6 +1,6 @@
 # ABOUT
 healthCare24, is a  MedTech website which offers you various services like PERSONALIZED MEETING, EMERGENCY BED BOOKING SYSTEM, SECURING SPOTS in EVENTS and a LEARN SECTION where patient learn all about DISEASES their causes and cure etc. , they also  learn about YOGA poses to remove their pain, and learn about HEALTHY FOOD RECIPES all these learning are with the CHAT_BOT..
- TO KNOW MORE VISIT 👉 https://healthcare24.framer.website/
+ TO KNOW MORE VISIT 👉 https://healthcare24-web-marshalzz.netlify.app/
  <br>
  <br>
  ![Screenshot 2024-09-10 223722](https://github.com/user-attachments/assets/1ea519c2-b147-4d74-9c04-ff84e15ca9d6)
